@@ -95,3 +95,25 @@ h2 { margin: 0; color: #f2f2f9; font-size: 19px; letter-spacing: -.045em; }
 .activity-copy { display: grid; gap: 4px; min-width: 0; }.activity-copy strong { color: #e2e2ed; font-size: 12px; }.activity-copy span { overflow: hidden; color: #777990; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
 .activity-meta { display: flex; align-items: center; gap: 18px; margin-left: auto; }.activity-meta small { min-width: 61px; color: #67697f; font-size: 10px; text-align: right; }
 .pill { border-radius: 20px; padding: 5px 8px; font-size: 9px; font-weight: 600; white-space: nowrap; }.new-pill { background: #252451; color: #9c9eff; }.proposal-pill { background: #24384b; color: #78bfff; }.meeting-pill { background: #203b32; color: #77d8a7; }
+
+@media (max-width: 900px) {
+  .app-layout { grid-template-columns: 78px 1fr; }
+  .sidebar { align-items: center; padding: 26px 12px; }
+  .brand { font-size: 0; }.brand-mark { width: 34px; height: 34px; }
+  .nav-list { width: 100%; margin-top: 60px; }.nav-link { justify-content: center; padding: 13px 0; }.nav-link span { width: auto; font-size: 19px; }.nav-link { font-size: 0; }
+  .sidebar-note { padding: 8px; }.sidebar-note div { display: none; }
+  .main-content { width: min(100% - 42px, 760px); }
+  .metrics-grid { grid-template-columns: 1fr 1fr; }.metric-featured { grid-column: span 2; }
+  .content-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  .app-layout { display: block; }
+  .sidebar { position: sticky; top: 0; z-index: 5; flex-direction: row; justify-content: space-between; border-right: 0; border-bottom: 1px solid #1b1b2a; padding: 14px 20px; background: #080812ee; backdrop-filter: blur(16px); }
+  .nav-list { display: flex; width: auto; gap: 4px; margin: 0; }.nav-link { padding: 8px 10px; }.sidebar-note { display: none; }
+  .main-content { width: min(100% - 30px, 500px); padding-top: 32px; }
+  .hero-copy { align-items: flex-start; flex-direction: column; margin: 31px 0 20px; gap: 14px; }.intro { margin: 0; font-size: 15px; }.period-button { width: 100%; text-align: left; }
+  .metrics-grid { grid-template-columns: 1fr; gap: 11px; }.metric-featured { grid-column: auto; }.metric-card { min-height: 170px; }
+  .pipeline-summary { gap: 19px; }.pipeline-summary strong { font-size: 16px; }.pipeline-legend { gap: 9px; }
+  .activity-item { align-items: flex-start; }.activity-meta { align-items: flex-end; flex-direction: column; gap: 5px; }.activity-meta small { min-width: auto; }.activity-copy span { max-width: 155px; white-space: normal; }
+}

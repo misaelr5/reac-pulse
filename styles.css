@@ -81,7 +81,7 @@ h2 { margin: 0; color: #f2f2f9; font-size: 19px; letter-spacing: -.045em; }
 .pipeline-legend span { display: flex; align-items: center; gap: 6px; }
 .legend-dot { width: 6px; height: 6px; border-radius: 50%; background: #7776f2; }.blue-dot { background: #4c91ed; }.orange-dot { background: #ed9562; }.green-dot { background: #56cd92; }
 .target-percent { color: #55d98b; font-size: 13px; font-weight: 700; }
-.target-ring { display: grid; place-items: center; width: 118px; height: 118px; margin: 25px auto 15px; border-radius: 50%; background: conic-gradient(#6870fb 0 72%, #25253d 72% 100%); }
+.target-ring { position: relative; display: grid; place-items: center; width: 118px; height: 118px; margin: 25px auto 15px; border-radius: 50%; background: conic-gradient(#6870fb 0 72%, #25253d 72% 100%); }
 .target-ring::before { content: ""; position: absolute; width: 92px; height: 92px; border-radius: 50%; background: #101020; }
 .target-ring > div { position: relative; display: grid; justify-items: center; gap: 4px; }
 .target-ring strong { color: #f4f4fb; font-size: 21px; }.target-ring span { color: #777990; font-size: 10px; }

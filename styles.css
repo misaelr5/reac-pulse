@@ -86,3 +86,12 @@ h2 { margin: 0; color: #f2f2f9; font-size: 19px; letter-spacing: -.045em; }
 .target-ring > div { position: relative; display: grid; justify-items: center; gap: 4px; }
 .target-ring strong { color: #f4f4fb; font-size: 21px; }.target-ring span { color: #777990; font-size: 10px; }
 .target-caption { max-width: 220px; margin: 0 auto; color: #85869d; font-size: 11px; line-height: 1.45; text-align: center; }
+.activity-panel { margin-top: 15px; }
+.filter-button { border: 1px solid #292940; border-radius: 8px; background: #141426; color: #999ab0; cursor: pointer; padding: 8px 11px; font-size: 11px; }
+.filter-button span { padding-left: 8px; color: #73758b; font-size: 15px; }
+.activity-list { margin-top: 13px; }
+.activity-item { display: flex; align-items: center; gap: 12px; padding: 16px 0; border-top: 1px solid #1d1d31; }
+.activity-avatar { display: grid; place-items: center; width: 33px; height: 33px; flex: 0 0 auto; border-radius: 10px; background: #302759; color: #c7bfff; font-size: 10px; font-weight: 700; }.orange-avatar { background: #4b3026; color: #ffbd9c; }.green-avatar { background: #1d4238; color: #9de1bf; }
+.activity-copy { display: grid; gap: 4px; min-width: 0; }.activity-copy strong { color: #e2e2ed; font-size: 12px; }.activity-copy span { overflow: hidden; color: #777990; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.activity-meta { display: flex; align-items: center; gap: 18px; margin-left: auto; }.activity-meta small { min-width: 61px; color: #67697f; font-size: 10px; text-align: right; }
+.pill { border-radius: 20px; padding: 5px 8px; font-size: 9px; font-weight: 600; white-space: nowrap; }.new-pill { background: #252451; color: #9c9eff; }.proposal-pill { background: #24384b; color: #78bfff; }.meeting-pill { background: #203b32; color: #77d8a7; }

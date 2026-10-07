@@ -13,11 +13,24 @@ body {
   background: #080812;
 }
 
-.app-shell {
-  width: min(1160px, calc(100% - 40px));
-  margin: 0 auto;
-  padding: 64px 0;
-}
+.app-layout { display: grid; grid-template-columns: 244px 1fr; min-height: 100vh; }
+.sidebar { border-right: 1px solid #1b1b2a; padding: 34px 22px; display: flex; flex-direction: column; }
+.brand { display: flex; align-items: center; gap: 11px; color: #fff; font-size: 21px; font-weight: 750; letter-spacing: -.05em; text-decoration: none; }
+.brand-mark { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 10px; background: #252eff; color: #fff; font-size: 16px; }
+.brand-muted { color: #686a83; font-weight: 500; }
+.nav-list { display: grid; gap: 8px; margin-top: 74px; }
+.nav-link { display: flex; align-items: center; gap: 13px; border-radius: 10px; padding: 12px 13px; color: #85869d; font-size: 14px; text-decoration: none; transition: .2s ease; }
+.nav-link span { width: 18px; color: #62647d; font-size: 17px; }
+.nav-link:hover, .nav-link.is-active { background: #151527; color: #fff; }
+.nav-link.is-active span { color: #6971ff; }
+.sidebar-note { display: flex; gap: 10px; margin-top: auto; border: 1px solid #202034; border-radius: 12px; padding: 13px; color: #a9aac0; font-size: 11px; }
+.sidebar-note strong, .sidebar-note small { display: block; }
+.sidebar-note strong { color: #e8e8f1; font-size: 12px; margin-bottom: 4px; }
+.sidebar-note small { line-height: 1.35; }
+.status-dot { flex: 0 0 auto; width: 7px; height: 7px; margin-top: 4px; border-radius: 50%; background: #55d98b; box-shadow: 0 0 0 4px #55d98b1c; }
+.main-content { width: min(1120px, calc(100% - 88px)); margin: 0 auto; padding: 46px 0 70px; }
+.topbar { display: flex; align-items: flex-start; justify-content: space-between; }
+.hero-copy { display: flex; align-items: center; justify-content: space-between; gap: 22px; margin: 42px 0 27px; }
 
 .eyebrow {
   color: #8f91aa;
@@ -26,5 +39,10 @@ body {
   letter-spacing: .18em;
 }
 
-h1 { font-size: clamp(42px, 7vw, 84px); line-height: .96; max-width: 800px; margin: 18px 0; }
+h1 { font-size: clamp(34px, 5vw, 54px); line-height: 1; letter-spacing: -.06em; margin: 12px 0; }
 .intro { color: #a5a6b9; font-size: 18px; }
+.eyebrow { margin: 0; }
+.avatar, .period-button { border: 1px solid #2a2a42; background: #111121; color: #dfe0eb; cursor: pointer; }
+.avatar { width: 42px; height: 42px; border-radius: 50%; font-size: 12px; font-weight: 700; }
+.period-button { border-radius: 9px; padding: 11px 14px; font-size: 12px; }
+.period-button span { color: #777990; padding-left: 10px; }

@@ -8,10 +8,20 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="app-shell">
-      <p class="eyebrow">REAC STUDIO / PULSE</p>
-      <h1>Tu negocio, en movimiento.</h1>
-      <p class="intro">Una vista clara para saber qué está pasando con tus oportunidades.</p>
-    </main>
+    <div class="app-layout">
+      <aside class="sidebar">
+        <a class="brand" href="#"><span class="brand-mark">R</span><span>reac<span class="brand-muted">/pulse</span></span></a>
+        <nav class="nav-list" aria-label="Navegación principal">
+          <a class="nav-link is-active" href="#overview"><span>◈</span> Resumen</a>
+          <a class="nav-link" href="#pipeline"><span>⌁</span> Pipeline</a>
+          <a class="nav-link" href="#activity"><span>◷</span> Actividad</a>
+        </nav>
+        <div class="sidebar-note"><span class="status-dot"></span><div><strong>Todo en orden</strong><small>Última sincronización hace 2 min</small></div></div>
+      </aside>
+      <main class="main-content" id="overview">
+        <header class="topbar"><div><p class="eyebrow">MIÉRCOLES, 7 DE OCTUBRE</p><h1>Buen día, Misael.</h1></div><button class="avatar" aria-label="Abrir perfil">ML</button></header>
+        <section class="hero-copy"><p class="intro">Esta es la lectura de tu operación para hoy.</p><button class="period-button">Últimos 30 días <span>⌄</span></button></section>
+      </main>
+    </div>
   </body>
 </html>

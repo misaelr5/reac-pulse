@@ -48,6 +48,8 @@ h1 { font-size: clamp(34px, 5vw, 54px); line-height: 1; letter-spacing: -.06em; 
 .period-button span { color: #777990; padding-left: 10px; }
 .metrics-grid { display: grid; grid-template-columns: 1.35fr 1fr 1fr; gap: 15px; }
 .metric-card { position: relative; min-height: 190px; overflow: hidden; border: 1px solid #202037; border-radius: 15px; padding: 22px; background: #101020; }
+.metric-card, .panel { transition: transform .22s ease, border-color .22s ease, background .22s ease; }
+.metric-card:hover, .panel:hover { transform: translateY(-2px); border-color: #35365a; }
 .metric-featured { background: linear-gradient(135deg, #171a43, #101020 70%); border-color: #2e3376; }
 .metric-label { display: flex; align-items: center; gap: 9px; color: #a7a8bc; font-size: 12px; }
 .metric-icon { display: grid; place-items: center; width: 25px; height: 25px; border-radius: 8px; background: #393ed0; color: #fff; font-size: 16px; }
@@ -95,6 +97,10 @@ h2 { margin: 0; color: #f2f2f9; font-size: 19px; letter-spacing: -.045em; }
 .activity-copy { display: grid; gap: 4px; min-width: 0; }.activity-copy strong { color: #e2e2ed; font-size: 12px; }.activity-copy span { overflow: hidden; color: #777990; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
 .activity-meta { display: flex; align-items: center; gap: 18px; margin-left: auto; }.activity-meta small { min-width: 61px; color: #67697f; font-size: 10px; text-align: right; }
 .pill { border-radius: 20px; padding: 5px 8px; font-size: 9px; font-weight: 600; white-space: nowrap; }.new-pill { background: #252451; color: #9c9eff; }.proposal-pill { background: #24384b; color: #78bfff; }.meeting-pill { background: #203b32; color: #77d8a7; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
 
 @media (max-width: 900px) {
   .app-layout { grid-template-columns: 78px 1fr; }
